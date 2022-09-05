@@ -1,0 +1,181 @@
+@import 'node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import 'node_modules/bootstrap-icons/font/bootstrap-icons.css';
+:root {
+  --title-font-weight: 700;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-image: initial;
+  background: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6f2fb;
+  font-weight: var(--title-font-weight);
+  color:black;
+  padding:1em;
+}
+
+.header-logo {
+  font-size: 1.5em;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--bs-yellow);
+}
+
+.navbar {
+  padding: 0;
+  
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+  padding: 1rem;
+}
+
+main {}
+
+.container {
+
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  min-height: 600px;
+}
+
+.hero::before {    
+  content: "";
+  background-image: url("pexels-david-yu-2684383.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.about-me {
+  background-color: blue;
+}
+
+
+.intro {
+  font-weight:  800;
+  font-size: 4em;
+  padding-top: 3em;
+  color:black;
+}
+
+.hero-info {
+  font-size: 1.5em;
+}
+
+@media (min-width: 576px) {
+  .intro {
+    font-size: 5em;
+    padding-top: 4em;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro {
+    font-size: 6em;
+    padding-top: 4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    font-size: 6em;
+    padding-top: 4em;
+  }
+}
+.center-button {
+      text-align: center;
+}
+
+.button {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 14px 50px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  background-color: var(--bs-yellow);
+  color:black;
+}
+
+#projects {
+  padding-top : 150px;
+  
+}
+
+h1 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+.project-header{
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom:4rem;
+}
+
+.project-title{
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 50px;
+}
+
+.project-info {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding: 14px 30px;
+  border-radius: 5px;
+  color:black;
+  margin-top:50px;  
+}
+
+.project-image {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.skills{
+  word-spacing: 2rem;
+  text-align: center;
+}
+
+.external-links {
+  font-size: 2rem;
+  text-align: center;
+}

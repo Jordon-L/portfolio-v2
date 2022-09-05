@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <header class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="header-logo">
+        JL
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            Home
+          </li>
+          <li>
+            Projects
+          </li>
+          <li>
+            About
+          </li>
+          <li>
+            Contact
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="hero" class="d-flex hero">
+    <div class="container">
+      <div class="row justify-content-center intro">
+        Jordon Lee
+      </div>
+      <div class="row justify-content-center hero-info">
+        <h3>Software Engineer</h3>
+      </div>
+      <div class="center-button">
+        <a href="#projects" class="button">Projects</a>
+      </div>
+    </div>
+  </section>
+  <div id=projects class="container min-vh-100">
+    <div class="row justify-content-center project-title">
+      <h3 class=project-header>Projects</h3>
+    </div>
+
+    <div class="row align-items-end justify-content-center project">
+
+      <div class="col col-12 col-lg-6">
+        <div class="project-info">
+          <div class="project-title">
+            Crazy Eights Card Game
+          </div>
+          <p>A web app to play the classic game Crazy Eights with Uno-like rules. Invite your friends and family to
+            play. Requires 4 players to start playing.</p>
+          <p class="skills">React Nodejs SocketIO Heroku</p>
+
+          <div class="external-links">
+            <i class="bi bi-github"></i>
+            <i class="bi bi-box-arrow-up-right"></i>
+          </div>
+
+          <div class="center-button">
+            <a class="button">More Info</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col col-12 col-lg-6">
+        <img src="./images/screely-crazy-eight.png" class="project-image img-fluid" alt="Responsive image">
+      </div>
+    </div>
+
+    <div class="row align-items-end justify-content-center project">
+
+      <div class="col col-12 col-lg-6">
+        <div class="project-info">
+          <div class="project-title">
+            Crypto Tax Calculator
+          </div>
+          <p>A web app to calculate your taxes for the Canadian crypto exchange, Shakepay. Integration with Ethereum Blockchain via Etherscan API and Coingecko API</p>
+          <p class="skills">React Nodejs Heroku</p>
+
+        </div>
+
+        <div class="external-links">
+          <i class="bi bi-github"></i>
+          <i class="bi bi-box-arrow-up-right"></i>
+        </div>
+
+        <div class="center-button">
+          <a class="button">More Info</a>
+        </div>
+
+      </div>
+
+      <div class="col col-12 col-lg-6">
+          <img src="./images/screely-crazy-eight.png" class="project-image img-fluid" alt="Responsive image">
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
