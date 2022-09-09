@@ -10,51 +10,81 @@
 
 <body>
   <header class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      <div class="header-logo">
-        JL
-      </div>
-      <nav class="navbar">
-        <ul>
-          <li>
-            Home
-          </li>
-          <li>
-            Projects
-          </li>
-          <li>
-            About
-          </li>
-          <li>
-            Contact
-          </li>
-        </ul>
+    <div class="container">
+      <nav class="navbar navbar-expand-md">
+        <div class="header-logo">
+          JL
+        </div>
+
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
+
   </header>
-  <section id="hero" class="d-flex hero">
+  <div id="hero" class="hero">
+    <div class="intro">
+      Jordon Lee
+    </div>
+    <div class="hero-info">
+      <h3>Software Engineer</h3>
+    </div>
     <div class="container">
-      <div class="row justify-content-center intro">
-        Jordon Lee
-      </div>
-      <div class="row justify-content-center hero-info">
-        <h3>Software Engineer</h3>
-      </div>
-      <div class="center-button">
-        <a href="#projects" class="button">Projects</a>
+      <div class="row justify-content-center test">
+        <div class="col-10">
+
+          I enjoy making things and sharing them on the web. My interest in software development
+          started back in 2014 when I decided to take robotics class in high school. Robotics has taught me important
+          problem-solving and teamwork skills. In my personal time, I am learning web development by contributing to open
+          source projects and working onpersonal projects.
+          My skillset focuses on backend technologies, however recently I have been learning frontend technologies, like
+          JavaScript and React.
+        </div>
+        <div class="row justify-content-center links">
+          <div class="col-10">
+            <ul>
+              <li>
+                <i class="bi bi-github "></i>
+              </li>
+              <li>
+                <i class="bi bi-linkedin"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
-  </section>
-  <div id=projects class="container min-vh-100">
-    <div class="row justify-content-center project-title">
-      <h3 class=project-header>Projects</h3>
+
+    <div class="center-button">
+      <a href="#projects" class="button">Projects</a>
+    </div>
+  </div>
+
+  <div id=projects class="container min-vh-100 heading">
+    <div class="row justify-content-center div-title">
+      <h3 class=div-header>Projects</h3>
     </div>
 
     <div class="row align-items-end justify-content-center project">
-
       <div class="col col-12 col-lg-6">
         <div class="project-info">
-          <div class="project-title">
+          <div class="div-title">
             Crazy Eights Card Game
           </div>
           <p>A web app to play the classic game Crazy Eights with Uno-like rules. Invite your friends and family to
@@ -62,19 +92,39 @@
           <p class="skills">React Nodejs SocketIO Heroku</p>
 
           <div class="external-links">
-            <i class="bi bi-github"></i>
-            <i class="bi bi-box-arrow-up-right"></i>
-          </div>
-
-          <div class="center-button">
-            <a class="button">More Info</a>
+            <a class="button">Github <i class="bi bi-github "></i> </a>
+            <a class="button">Demo <i class="bi bi-box-arrow-up-right"></i></a>
           </div>
         </div>
 
       </div>
 
       <div class="col col-12 col-lg-6">
-        <img src="./images/screely-crazy-eight.png" class="project-image img-fluid" alt="Responsive image">
+        <img src="./images/screely-crazy-eights.png" class="project-image img-fluid" alt="Crazy eights image">
+      </div>
+    </div>
+
+    <div class="row align-items-end justify-content-center project">
+
+      <div class="col col-12 col-lg-6">
+        <div class="project-info heading">
+          <div class="div-title">
+            Crypto Tax Calculator
+
+          </div>
+          <p>A web app to calculate your taxes for the Canadian crypto exchange, Shakepay. Integration with Ethereum
+            Blockchain via Etherscan API and Coingecko API.</p>
+          <p class="skills">React Nodejs Heroku</p>
+
+          <div class="external-links">
+            <a class="button">Github <i class="bi bi-github "></i> </a>
+            <a class="button">Demo <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-12 col-lg-6">
+        <img src="./images/screely-crypto-tax.png" class="project-image img-fluid" alt="3D chair image">
       </div>
     </div>
 
@@ -82,35 +132,69 @@
 
       <div class="col col-12 col-lg-6">
         <div class="project-info">
-          <div class="project-title">
-            Crypto Tax Calculator
+          <div class="div-title">
+            3D Chair Generator
+
           </div>
-          <p>A web app to calculate your taxes for the Canadian crypto exchange, Shakepay. Integration with Ethereum Blockchain via Etherscan API and Coingecko API</p>
-          <p class="skills">React Nodejs Heroku</p>
+          <p>A python script that takes 3D chair models and mixes the parts around to create more 3D chair models. The
+            output models are then scored by an AI. This was part of a group school project. The code is private due to
+            school policies.</p>
+          <p class="skills">Python ModernGL</p>
 
+          <div class="external-links">
+            <a class="button">Contact for code <i class="bi bi-github "></i> </a>
+          </div>
         </div>
-
-        <div class="external-links">
-          <i class="bi bi-github"></i>
-          <i class="bi bi-box-arrow-up-right"></i>
-        </div>
-
-        <div class="center-button">
-          <a class="button">More Info</a>
-        </div>
-
       </div>
 
       <div class="col col-12 col-lg-6">
-          <img src="./images/screely-crazy-eight.png" class="project-image img-fluid" alt="Responsive image">
+        <img src="./images/screely-chairs.png" class="project-image img-fluid" alt="Responsive image">
       </div>
     </div>
+  </div>
 
+  <div id=contact class="container heading">
+    <div class="row justify-content-center div-title">
+      <h3 class=div-header>Contact Me</h3>
+    </div>
+    <div class="row align-items-end justify-content-center">
+      <div class="col contact-info shadow">
+        <form id="form-contact">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="name" class="form-control" id="name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="5"></textarea>
+          </div>
+          <div class="center-button">
+            <button class="button">Submit</button>
+          </div>
+        </form>
+        <p id="log"></p>
+      </div>
+
+    </div>
   </div>
 
 
-
   <script type="module" src="/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+
+  @import '';
 </body>
 
 </html>

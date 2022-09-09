@@ -1,9 +1,12 @@
 @import 'node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import 'node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
 :root {
   --title-font-weight: 700;
+  --info-font-weight: 700;
 }
-body{
+
+body {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -13,8 +16,8 @@ header {
   padding: 15px 0;
   border-bottom: 1px solid #e6f2fb;
   font-weight: var(--title-font-weight);
-  color:black;
-  padding:1em;
+  color: black;
+  padding: 1em;
 }
 
 .header-logo {
@@ -27,7 +30,7 @@ header {
 
 .navbar {
   padding: 0;
-  
+
 }
 
 .navbar ul {
@@ -43,23 +46,27 @@ header {
   padding: 1rem;
 }
 
-main {}
-
-.container {
-
+.navbar li a {
+  text-decoration: none;
+  color: black;
 }
 
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+#hero {
+  align-items: flex-end;
+}
 .hero {
   width: 100%;
   height: 100vh;
-  position: relative;
-  min-height: 600px;
+
 }
 
-.hero::before {    
+.hero::before {
   content: "";
   background-image: url("pexels-david-yu-2684383.jpg");
-  min-height: 600px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,49 +80,42 @@ main {}
   z-index: -1;
 }
 
-.about-me {
-  background-color: blue;
-}
-
-
 .intro {
-  font-weight:  800;
-  font-size: 4em;
-  padding-top: 3em;
-  color:black;
-}
-
-.hero-info {
-  font-size: 1.5em;
+  font-weight: 800;
+  font-size: 3rem;
+  color: black;
+  padding-top: 30vh;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
   .intro {
     font-size: 5em;
-    padding-top: 4em;
   }
 }
 
 @media (min-width: 768px) {
   .intro {
     font-size: 6em;
-    padding-top: 4em;
   }
 }
 
 @media (min-width: 1200px) {
   .intro {
     font-size: 6em;
-    padding-top: 4em;
   }
 }
+.hero-info {
+  font-size: 1.5em;
+}
+
 .center-button {
-      text-align: center;
+  text-align: center;
 }
 
 .button {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  font-weight: 500;
+  font-weight: var(--info-font-weight);
   font-size: 14px;
   letter-spacing: 0.5px;
   display: inline-block;
@@ -124,53 +124,60 @@ main {}
   transition: 0.5s;
   margin-top: 30px;
   background-color: var(--bs-yellow);
-  color:black;
+  color: black;
+  text-decoration: none;
+  border: none;
 }
 
-#projects {
-  padding-top : 150px;
-  
+.heading {
+  padding-top: 100px;
 }
 
 h1 {
   text-align: center;
 }
+
 h3 {
   text-align: center;
 }
-.project-header{
-  font-size: 4rem;
-  font-weight: 700;
+
+.div-header {
+  font-size: 3rem;
+  font-weight: var(--title-font-weight);
   letter-spacing: 0.5px;
-  margin-bottom:4rem;
+  margin-bottom: 3rem;
 }
 
-.project-title{
-  font-size: 3rem;
-  font-weight: 700;
+.div-title {
+  font-size: 2rem;
+  font-weight: var(--title-font-weight);
   letter-spacing: 0.5px;
   text-align: center;
 }
 
 .project {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .project-info {
-  font-weight: 500;
+  font-weight: var(--info-font-weight);
   font-size: 16px;
   letter-spacing: 0.5px;
   padding: 14px 30px;
   border-radius: 5px;
-  color:black;
-  margin-top:50px;  
+  color: black;
+  margin-top: 50px;
+}
+.shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
 }
 
 .project-image {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.skills{
+.skills {
   word-spacing: 2rem;
   text-align: center;
 }
@@ -178,4 +185,40 @@ h3 {
 .external-links {
   font-size: 2rem;
   text-align: center;
+}
+
+.test {
+  padding: 2rem;  
+  font-weight: var(--info-font-weight);
+  text-align: center;
+}
+
+.contact-info {
+  background:white;
+  padding: 3rem;
+  margin-bottom:2rem;
+  font-weight: var(--info-font-weight);
+}
+
+.form-group{
+  padding-bottom:1rem;
+}
+
+.links {
+  font-size:4rem;
+  flex-direction: row;
+}
+
+.links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.links li {
+  position: relative;
+  padding: 1rem;
 }
