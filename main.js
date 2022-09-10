@@ -1,4 +1,5 @@
 import './style.css'
+
 const log = document.getElementById('log');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
