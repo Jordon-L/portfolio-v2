@@ -33,7 +33,6 @@ function contactMe(){
     message.value = "";
   }
   else{
-    console.log('empty')
     log.textContent = `Please fill in form`;
   }
 }
