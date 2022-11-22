@@ -1,1 +1,1 @@
-Go to https://jordonlee.com/
+View at https://jordonlee.com/
