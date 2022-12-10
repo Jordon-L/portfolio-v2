@@ -1,4 +1,5 @@
-import './style.css'
+
+import 'bootstrap';
 
 const log = document.getElementById('log');
 const name = document.getElementById('name');
